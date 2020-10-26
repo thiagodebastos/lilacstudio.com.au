@@ -1,0 +1,23 @@
+:root {
+  --gradient: linear-gradient(119.58deg, #961696 36.56%, #FC8B8B 91.15%);
+  --colorPrimary: #C8A2C8;
+  --colorSecondary: #FC8B8B;
+  --colorText: #454545;
+  --colorTextDimmed: #7b7b7b;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-gradient {
+  background: var(--gradient);
+}
+
+.text-gradient {
+  background-image: var(--gradient);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
